@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="layer1">
+
+        <header>
+            <nav>
+                <a href="#"><img src="#" alt="javascript"></a>
+                <a href="#" id="tryJavascript"><b>JAVASCRIPT
+                    <div class="dropDownList">
+                        <p>lessons</p>
+                        <p>examples</p>
+                        <p>project</p>
+                    </div>
+                </b></a>
+                <div class="leftNav">
+
+                    <a href="#"><p>learn</p></a>
+                    <a href="#"><p>resources</p></a>
+                    <a href="#"><p>about</p></a>
+
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <p id="reversed"><b>CELEBRATING</b></p>
+            <p><b>25 years of javascript</b></p>
+            <p><i><b>1,444,231libraries</b> and counting...</i></p>
+            <p class="middle"><b></b></p>
+        </div>
+
+        <div class="boxes">
+            <div class="box1">
+
+                <div class="line">
+                    <p class="onDemand"><b> ON DEMAND</b></p>
+                    <div class="box3">
+                        
+                    <p>მიმდინარე თარიღი:</p>
+                    <p id="date"></p>
+                    <button onclick="showdate()" >შეამოწმე თარიღი:</button>
+
+                    </div>
+                </div> <div class="line">
+                    <p class="onDemand"><b> ON DEMAND</b></p>
+                    <div class="box3">
+                        
+                    <p>მიმდინარე დრო:</p>
+                    <p id="time"></p>
+                    <button onclick="showtime()" >შეამოწმე დრო:</button>
+
+                    </div>
+                </div>
+                <div class="line">
+                    <p class="onDemand"><b> ON DEMAND</b></p>
+                    <div class="box3">
+                        
+                    <p>შეამოწმე რაოდენობა:</p>
+                    <p id="quantity"></p>
+                    <button onclick="showQuantity()" >შეამოწმე რაოდენობა:</button>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="box2">
+
+                <div class="BlackBox">
+                    ნებისმიერი ფოტო ან კურსის აღწერა
+                </div>
+                <div class="BlackBox">
+                    ნებისმიერი ფოტო ან კურსის აღწერა
+                </div>
+                <div class="BlackBox">
+                    ნებისმიერი ფოტო ან კურსის აღწერა
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+<script>
+const d = new Date();
+
+    function showdate(){
+        document.getElementById("date").innerHTML = d.toLocaleDateString();
+    }
+    function showtime(){
+        document.getElementById("time").innerHTML = d.toLocaleTimeString();
+    }
+    function showQuantity(){
+        document.getElementById("quantity").innerHTML = Math.floor(Math.random() * 10);
+    }
+    
+</script>
+
+</body>
+</html>
